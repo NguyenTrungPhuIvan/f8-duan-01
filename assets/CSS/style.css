@@ -55,6 +55,8 @@ a {
     background-color: #e6f0ff;
     height: calc(100vh - 89px);
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 header {
@@ -103,9 +105,6 @@ header {
 
 /* ===== Hero ===== */
 
-.hero {
-    padding-top: 120px;
-}
 .hero .info {
     width: 51%;
 }

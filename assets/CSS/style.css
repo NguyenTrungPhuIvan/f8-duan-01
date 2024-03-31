@@ -47,18 +47,20 @@ a {
 }
 
 /* ======= Header ========== */
-header {
+.hero-wrap {
     background-color: #e6f0ff;
-    height: 80vh;
+    height: calc(100vh - 89px);
     position: relative;
 }
 
+header {
+    position: sticky;
+    top: -28px;
+    z-index: 999;
+}
 .nav-fixed {
     background: #e6f0ff;
     padding-top: 28px;
-    position: sticky;
-    z-index: 999;
-    top: -28px;
 }
 .navbar {
     display: flex;

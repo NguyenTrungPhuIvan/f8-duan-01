@@ -154,10 +154,21 @@ header {
 }
 
 .client .client-logo {
-    margin-top: 96.5px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
 }
+
+.client .client-logo a {
+    display: flex;
+    align-items: center;
+    height: 91px;
+    padding: 0 40px;
+}
+.client .client-logo a:hover {
+    box-shadow: 0 10px 20px 5px #c4c4c4;
+}
+
 /* ============= Guides ============== */
 
 .guide {

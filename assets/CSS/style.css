@@ -614,13 +614,14 @@ header {
     border: 5px;
     display: flex;
     gap: 15px;
+    background: #f9f9f9;
 }
 .footer .social a {
     width: 2.8471rem;
     height: 2.8471rem;
 }
 .footer .social a:hover {
-    opacity: 0.5;
+    background: #ebebeb;
 }
 
 .footer .row-down {

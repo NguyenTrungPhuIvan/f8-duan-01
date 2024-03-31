@@ -52,11 +52,20 @@ header {
     height: 80vh;
     position: relative;
 }
+
+.nav-fixed {
+    background: #e6f0ff;
+    padding-top: 28px;
+    position: sticky;
+    z-index: 999;
+    top: -28px;
+}
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 10px 0;
 }
+
 .navbar ul {
     display: flex;
     margin-left: 50px;
@@ -89,7 +98,7 @@ header {
 /* ===== Hero ===== */
 
 .hero {
-    margin-top: 130px;
+    padding-top: 120px;
 }
 .hero .info {
     width: 51%;

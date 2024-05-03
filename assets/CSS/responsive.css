@@ -1,0 +1,74 @@
+/* tablet & mobile*/
+@media screen and (max-width: 991.98px) {
+    .header-tablet-phone {
+        display: block;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .icon-menu {
+        display: block;
+        width: 24px;
+        color: #0f1b4c;
+    }
+    .navbar > a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu-opacity {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav__menu-tablet-phone {
+        padding: 50px;
+        position: fixed;
+        transition: transform 0.4s ease;
+        transform: translateX(-100%);
+        inset: 0 40% 0 0;
+        background: #fff;
+    }
+    .action {
+        margin-left: auto;
+    }
+    .logo-phone-tablet {
+    }
+    .menu-phone-tablet {
+        margin-top: 32px;
+    }
+    .menu-phone-tablet a {
+        padding: 14px 0;
+        display: block;
+        color: #4f5361;
+        font-weight: 500;
+    }
+    .separate-menu {
+        border-top: 1px solid #ccc;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media screen and (max-width: 767.98px) {
+    .nav__menu-tablet-phone {
+        padding: 30px;
+        inset: 0 25% 0 0;
+    }
+    .action {
+        display: none;
+    }
+    .show-on-mobile {
+        display: block;
+    }
+}

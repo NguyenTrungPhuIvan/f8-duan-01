@@ -95,23 +95,44 @@
         />
         <!-- style -->
         <link rel="stylesheet" href="./assets/CSS/style.css" />
+        <link rel="stylesheet" href="./assets/CSS/responsive.css" />
     </head>
     <body id="Home">
+        <!-- PC -->
+
         <header>
             <div class="nav-fixed">
                 <div class="content">
                     <nav class="navbar">
+                        <svg
+                            class="icon-menu"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            fill="CurrentColor"
+                        >
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+
                         <!-- Logo -->
                         <a href="#Home"
                             ><img src="./assets/IMG/Logo.svg" alt="Besnik."
                         /></a>
                         <!-- Nav chính -->
-                        <ul>
+                        <ul class="menu-phone-tablet" id="pc-nav">
                             <li><a href="#Home">Home</a></li>
                             <li><a href="#Services">Services</a></li>
                             <li><a href="#Features">Features</a></li>
                             <li><a href="#Resources">Resources</a></li>
                             <li><a href="#Contact">Contact</a></li>
+                            <li class="show-on-mobile separate-menu">
+                                <a href="#!">Sign in</a>
+                            </li>
+                            <li class="show-on-mobile">
+                                <a href="#!">Sign up</a>
+                            </li>
                         </ul>
                         <!-- Action -->
                         <div class="action">
@@ -122,7 +143,17 @@
                 </div>
             </div>
         </header>
-        <main>
+        <!-- tablet - phone -->
+        <header class="header-tablet-phone">
+            <div class="menu-opacity"></div>
+            <div class="nav__menu-tablet-phone">
+                <a href="#Home" class="logo-phone-tablet"
+                    ><img src="./assets/IMG/Logo.svg" alt="Besnik."
+                /></a>
+                <ul class="menu-phone-tablet" id="mobile-nav"></ul>
+            </div>
+        </header>
+        <main hidden>
             <!-- Header -->
             <div class="hero-wrap">
                 <div class="content">
@@ -572,7 +603,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" style="display: none">
             <div class="content">
                 <div class="row row-top">
                     <div class="column">
@@ -661,5 +692,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>

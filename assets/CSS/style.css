@@ -51,6 +51,12 @@ a {
 }
 
 /* ======= Header ========== */
+.header-tablet-phone {
+    display: none;
+}
+.show-on-mobile {
+    display: none;
+}
 .hero-wrap {
     background-color: #e6f0ff;
     height: calc(100vh - 89px);
@@ -71,6 +77,7 @@ header {
 .navbar {
     display: flex;
     align-items: center;
+
     padding: 10px 0;
 }
 
@@ -101,6 +108,10 @@ header {
     padding: 13px 22px;
     margin-left: 18px;
     border-radius: 8px;
+}
+
+.icon-menu {
+    display: none;
 }
 
 /* ===== Hero ===== */

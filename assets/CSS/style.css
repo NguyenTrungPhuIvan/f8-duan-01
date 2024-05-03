@@ -334,7 +334,8 @@ header {
 
 .Featured .list-featured {
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -596,7 +597,7 @@ header {
     display: flex;
 }
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .row-top {
